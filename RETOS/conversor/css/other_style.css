@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Error */
+#error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Estilo del contenedor principal */
+body {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh;
+  background-color: #f4f4f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  text-align: center; /* Alinea el texto al centro */
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #04213f;
+}
+
+/* Contenedor del input */
+.inputContainer {
+  margin-bottom: 30px;
+}
+
+.inputContainer label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Contenedor de los selects */
+.selectContainer {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los selects */
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.selectGroup {
+  flex: 1; /* Hace que ambos grupos ocupen el mismo ancho */
+}
+
+.selectGroup label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.selectGroup select {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Botón */
+button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Resultado */
+#result {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #0a3b73;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+#resultInverted {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #707070;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Redirect */
+a {
+  text-decoration: none;
+  color: #707070;
+  transition: color 0.3s;
+}
+a:hover {
+  color: black;
+}

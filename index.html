@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dot Master | Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Prototipo de Two Dots</h1>
+    <!--Header-->
+    <header>
+        <img src="./media/img/logo.png" alt="logotipo de MasterMind">
+    </header>
+    <!--End of header-->
+
+    <!--Main-->
+    <main>
+        <form action="game.html" id="formLogin">
+            <div class="itemform">
+                <label for="nickname">Enter your nickname:</label>
+                <p id="errorNick"></p>
+                <input type="text" name="nicknamea" value="@" id="nicknamea" readonly>
+                <input type="text" name="nickname" id="nickname" required>
+            </div>
+            <div class="itemform">
+                <label for="nickname">Enter your email:</label>
+                <p id="errorEmail"></p>
+                <input type="email" name="email" placeholder="cafe@azucar.com" id="email">
+            </div>
+            <div class="itemform">
+                <label for="gamesize">Size of game: </label>
+                <p id="errorGamesize"></p>
+                <select name="gamesize" id="gamesize">
+                    <option value="0">--Please select an option--</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <input type="submit" value="Play!" id="play">
+            </div>
+        </form>
+    </main>
+    <!--End of main-->
+
+    <!--Footer-->
+    <footer>
+        <p>Curso FrontEnd de HTML, CSS y JS</p>
+    </footer>
+    <!--End of footer-->
+
+    <!--Scripts-->
+    <script src="./js/script.js"></script>
+</body>
+</html>

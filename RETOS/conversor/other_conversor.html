@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/other_style.css">
+<title>Currency converter</title>
+</head>
+<body>
+<div class="container">
+  <h1>Currency converter</h1>
+  <form id="currencyForm">
+    <div class="inputContainer">
+      <label for="amount">Amount:</label>
+      <p id="error"></p>
+      <input type="number" id="amount" placeholder="e.g. 100" required>
+    </div>
+    <div class="selectContainer">
+      <div class="selectGroup">
+        <label for="fromCurrency">From:</label>
+        <select id="fromCurrency">
+            <option value="USD">🇺🇸 USD (US Dollar)</option>
+            <option value="EUR">🇪🇺 EUR (Euro)</option>
+            <option value="JPY">🇯🇵 JPY (Japanese Yen)</option>
+            <option value="AUD">🇦🇺 AUD (Australian Dollar)</option>
+            <option value="RUB">🇷🇺 RUB (Russian Ruble)</option>
+        </select>
+      </div>
+      <div class="selectGroup">
+        <label for="toCurrency">To:</label>
+        <select id="toCurrency">
+            <option value="EUR">🇪🇺 EUR (Euro)</option>
+            <option value="USD">🇺🇸 USD (US Dollar)</option>
+            <option value="JPY">🇯🇵 JPY (Japanese Yen)</option>
+            <option value="AUD">🇦🇺 AUD (Australian Dollar)</option>
+            <option value="RUB">🇷🇺 RUB (Russian Ruble)</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit">Convert</button>
+    <a href="index.html" class="button" id="redirect">TRY OTHER</a>
+  </form>
+  <p id="result"></p>
+  <p id="resultInverted"></p>
+</div>
+<script src="./js/other_script.js"></script>
+</body>
+</html>

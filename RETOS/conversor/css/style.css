@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Error */
+#error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Estilo del contenedor principal */
+body {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura total de la ventana */
+  background-color: #f4f4f9; /* Color de fondo suave */
+  font-family: 'Poppins', sans-serif;
+}
+strong {
+  color: #0a3b73;
+}
+
+.container {
+  text-align: center; /* Alinea el texto al centro */
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #04213f;
+}
+
+/* Contenedores de input y select */
+.input-container, .select-container {
+  margin-bottom: 20px;
+}
+
+.input-container label, .select-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.input-container input, .select-container select {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Botón */
+button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Resultados */
+.results-container {
+  margin-top: 30px;
+}
+
+.results-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(minmax(150px, 1fr)); /* Cuadrícula responsiva */
+  gap: 20px; /* Espacio entre las casillas */
+}
+
+.result-box {
+  background-color: #eaeaea; /* Fondo azul claro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4e4e4e;
+}
+
+.result-box strong {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Redirect */
+a {
+text-decoration: none;
+color: #707070;
+transition: color 0.3s;
+}
+a:hover {
+color: black;
+}

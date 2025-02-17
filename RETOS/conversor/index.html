@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Currency Converter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <form id="currencyForm">
+      <div class="input-container">
+        <label for="amount">Amount:</label>
+        <p id="error"></p>
+        <input type="number" id="amount" placeholder="e.g. 100" min="0" required>
+      </div>
+      <div class="select-container">
+        <label for="fromCurrency">From:</label>
+        <select id="fromCurrency">
+          <option value="USD">🇺🇸 USD (US Dollar)</option>
+          <option value="EUR">🇪🇺 EUR (Euro)</option>
+          <option value="JPY">🇯🇵 JPY (Japanese Yen)</option>
+          <option value="AUD">🇦🇺 AUD (Australian Dollar)</option>
+          <option value="RUB">🇷🇺 RUB (Russian Ruble)</option>
+        </select>
+      </div>
+      <button type="submit">Convert</button>
+      <a href="other_conversor.html" class="button" id="redirect">TRY OTHER</a>
+    </form>
+
+    <!-- Resultados -->
+    <div id="results" class="results-container">
+      <h2>Results:</h2>
+      <div id="conversionResults" class="results-grid"></div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
