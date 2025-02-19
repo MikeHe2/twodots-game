@@ -1,4 +1,4 @@
-# twodots_game
+# twodots-game
 
 Link pare ver desde github pages:
 https://mikehe2.github.io
