@@ -21,21 +21,22 @@
     <!--Main-->
     <main>
         <form action="game.html" id="formLogin">
+            <p id="errorLogin"></p>
             <div class="itemform">
-                <label for="nickname">Enter your nickname:</label>
+                <label for="nickName">Enter your nickname:</label>
                 <p id="errorNick"></p>
-                <input type="text" name="nicknamea" value="@" id="nicknamea" readonly>
-                <input type="text" name="nickname" id="nickname" required>
+                <input type="text" name="nickNamea" value="@" id="nickNamea" readonly>
+                <input type="text" name="nickName" id="nickName" required>
             </div>
             <div class="itemform">
-                <label for="nickname">Enter your email:</label>
+                <label for="email">Enter your email:</label>
                 <p id="errorEmail"></p>
                 <input type="email" name="email" placeholder="cafe@azucar.com" id="email">
             </div>
             <div class="itemform">
-                <label for="gamesize">Size of game: </label>
+                <label for="gameSize">Size of game: </label>
                 <p id="errorGamesize"></p>
-                <select name="gamesize" id="gamesize">
+                <select name="gameSize" id="gameSize">
                     <option value="0">--Please select an option--</option>
                     <option value="1">4x4</option>
                     <option value="2">5x5</option>
@@ -56,6 +57,7 @@
     <!--End of footer-->
 
     <!--Scripts-->
+    <script src="./js/userData.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

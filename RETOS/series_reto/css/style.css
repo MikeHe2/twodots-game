@@ -1,0 +1,17 @@
+/* CSS culero */
+
+body{
+    background-color: aliceblue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    width: 300px;
+    margin: 30px auto 0px auto;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Series favoritas</title>
+</head>
+<body>
+    <h1>Series favoritas</h1>
+    <main>
+        <form action="registro.html" id="formSeries">
+            <div id="item-form">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id='name' required>
+            </div>
+            <div id="item-form">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" required>
+            </div>
+            <div id="item-form">
+                <label for="series1">Choose your favorite:</label>
+                <select id="series1">
+                    <option value="0">--Please select an option--</option>
+                    <option value="Attack On Titan">Attack On Titan</option>
+                    <option value="Death Note">Death Note</option>
+                    <option value="Dragon Ball Z">Dragon Ball Z</option>
+                    <option value="One Piece">One Piece</option>
+                    <option value="Hunter x Hunter">Hunter x Hunter</option>
+                    <option value="Demon Slayer">Demon Slayer</option>
+                </select>
+            </div>
+            <div id="item-form">
+                <label for="series2">Choose your favorite:</label>
+                <select id="series2">
+                    <option value="0">--Please select an option--</option>
+                    <option value="Adventure Time">Adventure Time</option>
+                    <option value="The Simpsons">The Simpsons</option>
+                    <option value="Family Guy">Family Guy</option>
+                    <option value="Falls">Falls</option>
+                    <option value="Sponge Bob">Sponge Bob</option>
+                    <option value="Rugrats">Rugrats</option>
+                </select>
+            </div>
+            <div id="item-form">
+                <label for="series3">Choose your favorite:</label>
+                <select id="series3">
+                    <option value="0">--Please select an option--</option>
+                    <option value="Breaking Bad">Breaking Bad</option>
+                    <option value="Better Call Saul">Better Call Saul</option>
+                    <option value="The Office">The Office</option>
+                    <option value="FRIENDS">FRIENDS</option>
+                    <option value="Peaky Blinders">Peaky Blinders</option>
+                    <option value="Ozark">Ozark</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <input type="submit" value="SUBMIT" id="btnsubmit">
+            </div>
+        </form>
+
+        <script src="./js/saveData.js"></script>
+    </main>
+</body>
+</html>
