@@ -8,16 +8,19 @@ var gameSize;
 var geolocationTxt;
 
 
-function userData(nickName){
+function userData(nickName, gameSize, email){
 
     sessionStorage.setItem('nickName', nickName.value);
     sessionStorage.setItem('email', email.value);
     sessionStorage.setItem('gameSize', gameSize.value);
+    sessionStorage.setItem('geolocationTxt', geolocationTxt)
 }
 
 function getUserData(){
 
-    nickName = sessionStorage.getItem('nickName')
+    nickName = sessionStorage.getItem('nickName');
+    email = sessionStorage.getItem('email');
+    gameSize = sessionStorage.getItem('gameSize');
 }
 
 function checkUserData(){
@@ -35,7 +38,11 @@ function geolocationData(){
     if (!navigator.geolocation){
         geolocationTxt = 'Your browser is no compatible with API Geolocation'
     } else {
-        
+        navigator.geolocation.getCurrentPosition(
+            (position) => {geolocationTxt = 'Latitude: ' + position.coords.latitude + ', Longitude: ' + position.coords.longitude},
+
+            () => {geolocationTxt = 'There was an error with the geolocation'}
+        )
     }
 }
 
@@ -54,6 +61,6 @@ function historyUsers(nickName) {
         nickName: nickName.value,
         date: Date.now()
     }
-
+    history.push(userRegist);
     localStorage.setItem('history', JSON.stringify(history));
 }
